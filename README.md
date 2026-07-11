@@ -7,7 +7,7 @@
 Museum cara ngetik netizen +62 - mulai dari **Alay**, **UwU**, **Rimsvek**, sampai **Binary**.
 Ringan, client-side, offline-ready, dan open source.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
+[![License: GPLv3](https://img.shields.io/badge/License-GPLv3-green.svg)](./LICENSE)
 [![Made with React](https://img.shields.io/badge/React-19-61dafb?logo=react&logoColor=white)](https://react.dev/)
 [![Built with Vite](https://img.shields.io/badge/Vite-7-646cff?logo=vite&logoColor=white)](https://vitejs.dev/)
 [![Styled with Tailwind](https://img.shields.io/badge/Tailwind-4-38bdf8?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
@@ -307,7 +307,7 @@ Ide kontribusi ramah pemula:
 
 ## 📄 License
 
-[MIT](./LICENSE) © 2026 flessan & kontributor teksreceh.
+[GPLv3](./LICENSE) © 2026 flessan & kontributor teksreceh.
 
 Silakan fork, remix, dan pakai di proyekmu.
 

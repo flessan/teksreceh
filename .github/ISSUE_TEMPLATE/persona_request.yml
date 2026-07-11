@@ -1,0 +1,42 @@
+name: 🎭 Request Persona Baru
+description: Usulkan persona baru (gaya bahasa yang bisa dipakai lintas generator)
+title: "[Persona]: "
+labels: ["persona", "enhancement"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Nama Persona
+      placeholder: Warnet 2009, Twitter SJW, Ojol Boba, dst.
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Deskripsi
+      description: 1 kalimat jelasin gaya bahasa persona ini.
+    validations:
+      required: true
+
+  - type: textarea
+    id: rules
+    attributes:
+      label: Aturan Transformasi
+      description: |
+        Jelaskan aturan mainnya. Contoh:
+        - semua huruf besar
+        - "aku" → "gue"
+        - tambah emoji ☕ setiap kata "kopi"
+    validations:
+      required: true
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Contoh Input → Output
+      placeholder: |
+        Input:  aku mau ngopi dulu
+        Output: GUE MAU NGOPI DULU ☕☕
+    validations:
+      required: true

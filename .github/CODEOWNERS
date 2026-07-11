@@ -1,0 +1,15 @@
+# Default owner untuk semua file
+*                        @flessan
+
+# Konfigurasi generator butuh review ekstra
+/src/data/               @flessan
+/src/transformers/       @flessan
+
+# Dokumentasi
+/README.md               @flessan
+/CONTRIBUTING.md         @flessan
+/CODE_OF_CONDUCT.md      @flessan
+
+# Workflow & security
+/.github/                @flessan
+/SECURITY.md             @flessan

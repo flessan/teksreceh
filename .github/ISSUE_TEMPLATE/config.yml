@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Diskusi / Tanya-jawab
+    url: https://github.com/flessan/teksreceh/discussions
+    about: Diskusi umum, ide, dan pertanyaan. Bukan bug atau request.
+  - name: 🔒 Laporan Keamanan (privat)
+    url: https://github.com/flessan/teksreceh/security/advisories/new
+    about: Kalau kamu menemukan celah keamanan, mohon jangan buka issue publik.

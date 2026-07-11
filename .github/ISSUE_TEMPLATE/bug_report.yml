@@ -1,0 +1,80 @@
+name: 🐛 Bug Report
+description: Laporkan bug atau perilaku tidak terduga
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Makasih udah bantu bikin teksreceh makin stabil 🙏
+        Isi template ini biar bug bisa cepat diperbaiki.
+
+  - type: input
+    id: generator
+    attributes:
+      label: Generator yang terkait
+      description: Kalau bug spesifik ke generator tertentu, sebutkan slug-nya (contoh `alay-generator`).
+      placeholder: alay-generator
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Deskripsi Bug
+      description: Jelaskan apa yang terjadi dan apa yang diharapkan.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Langkah Reproduce
+      description: Langkah minimal untuk mereproduksi bug.
+      placeholder: |
+        1. Buka /?g=alay-generator
+        2. Ketik "aku lapar"
+        3. Klik Advanced → geser slider intensity ke 10
+        4. Lihat output kosong
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: Apa yang seharusnya terjadi?
+    validations:
+      required: true
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser & Versi
+      placeholder: Chrome 131 / Firefox 132 / Safari 18
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: OS & Perangkat
+      placeholder: Windows 11 / macOS 14 / Android 14 / iOS 18
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot / Video (opsional)
+      description: Drag & drop file di sini.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: Saya sudah cari issue serupa dan tidak menemukan.
+          required: true
+        - label: Saya menggunakan versi terbaru dari deploy publik.
+          required: false

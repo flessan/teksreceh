@@ -1,0 +1,83 @@
+name: 🧠 Request Generator Baru
+description: Usulkan generator teks baru untuk diarsipkan di teksreceh
+title: "[Generator]: "
+labels: ["generator", "enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ide generator receh diterima dengan tangan terbuka 🗿
+        Semakin lengkap konteksnya, semakin cepat bisa dibuat.
+
+  - type: input
+    id: name
+    attributes:
+      label: Nama Generator
+      placeholder: Sigma Bocah, Emak Facebook, Anak Twitter, dst.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Kategori
+      options:
+        - Meme Indonesia
+        - Tongkrongan
+        - Gaming
+        - Sosial Media
+        - Developer
+        - Fancy Text
+        - Unicode
+        - Utilities
+        - Lainnya (jelaskan di deskripsi)
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Deskripsi Singkat
+      description: 1-2 kalimat yang jelasin generator ini ngapain.
+    validations:
+      required: true
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Contoh Input → Output
+      description: Minimal 3 contoh. Semakin banyak semakin bagus.
+      placeholder: |
+        Input:  aku lapar
+        Output: AKU LAPAR CUYY 🗿
+
+        Input:  bang iya
+        Output: bang 🗿 iya jir
+    validations:
+      required: true
+
+  - type: textarea
+    id: origin
+    attributes:
+      label: Asal-usul / Konteks Budaya
+      description: Dari mana tren ini muncul? Link tweet, TikTok, kolom komentar, grup WA, dll sangat membantu.
+    validations:
+      required: true
+
+  - type: textarea
+    id: options
+    attributes:
+      label: Opsi / Slider yang Diperlukan (opsional)
+      placeholder: |
+        - Intensity 1-10 (soft ke maximum cringe)
+        - Toggle emoji batu 🗿
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: Saya sudah cari di daftar generator dan belum ada.
+          required: true
+        - label: Generator ini bukan berupa hate speech / hinaan personal.
+          required: true

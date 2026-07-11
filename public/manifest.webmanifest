@@ -1,0 +1,17 @@
+{
+  "name": "teksreceh",
+  "short_name": "teksreceh",
+  "description": "Museum generator teks internet Indonesia yang ringan, chat-like, open source, dan siap kontribusi di GitHub.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#10b981",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

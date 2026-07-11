@@ -1,0 +1,37 @@
+name: Close Stale Issues & PRs
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+
+    steps:
+      - uses: actions/stale@v9
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          days-before-issue-stale: 45
+          days-before-issue-close: 14
+          stale-issue-label: "stale"
+          stale-issue-message: |
+            Issue ini belum ada aktivitas selama 45 hari.
+            Kalau masih relevan, silakan balas atau update. Kalau tidak ada aktivitas dalam 14 hari, issue akan ditutup otomatis. 🗿
+          close-issue-message: |
+            Issue ditutup karena tidak ada aktivitas. Silakan buka ulang kalau masalah masih ada.
+
+          days-before-pr-stale: 30
+          days-before-pr-close: 10
+          stale-pr-label: "stale"
+          stale-pr-message: |
+            PR ini belum ada update 30 hari. Tolong resolve konflik atau lanjutkan diskusi 🙏.
+          close-pr-message: |
+            PR ditutup karena tidak ada aktivitas. Silakan buka ulang kapan saja.
+
+          exempt-issue-labels: "pinned,security,roadmap"
+          exempt-pr-labels: "pinned,security,work-in-progress"

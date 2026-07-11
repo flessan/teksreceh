@@ -1,0 +1,9 @@
+dist
+build
+node_modules
+coverage
+public/sw.js
+*.min.*
+package-lock.json
+pnpm-lock.yaml
+yarn.lock

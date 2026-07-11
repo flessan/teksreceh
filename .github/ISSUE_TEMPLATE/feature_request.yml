@@ -1,0 +1,46 @@
+name: ✨ Feature Request
+description: Usulkan fitur baru atau perbaikan (bukan generator)
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Punya ide fitur? Yuk diskusi dulu di sini biar arahnya jelas 🚀
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Masalah yang Dihadapi
+      description: Apa pain point yang mau diselesaikan fitur ini?
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solusi yang Diusulkan
+      description: Bayangan solusi kamu seperti apa?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatif yang Sudah Dipertimbangkan (opsional)
+
+  - type: textarea
+    id: mockup
+    attributes:
+      label: Mockup / Referensi (opsional)
+      description: Drag & drop screenshot, sketch, atau link Figma.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: Fitur ini sejalan dengan filosofi "simple by default, powerful on demand".
+          required: true
+        - label: Fitur ini tidak butuh backend / third-party tracker.
+          required: true
